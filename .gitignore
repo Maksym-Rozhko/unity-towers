@@ -1,0 +1,7 @@
+node_modules
+source
+images  
+build/images
+*.json
+.DS_Store
+gulpfile.js
