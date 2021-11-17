@@ -213,11 +213,12 @@
         <div class="about">
             <div class="wrapper">
                 <form id="firstForm" class="form" action="#">
+                    <input type="hidden" name="host" value="unity-towers">
                     <label class="form-label">
-                        <input class="form-input" placeholder="Ваше имя" type="text" name="name" id="name">
+                        <input class="form-input" placeholder="Ваше имя" type="text" name="name" id="name" oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'');">
                     </label>
                     <label class="form-label">
-                        <input class="form-input form-input--mask" placeholder="+38(__)__-__-___" type="tel" name="tel" id="tel">
+                        <input class="form-input form-input--mask" placeholder="+38(__) __-__-___" type="tel" name="tel" id="tel">
                     </label>
                     <button type="submit" class="main-button">
                         заказать консультацию
@@ -507,7 +508,7 @@
                     <div class="promo-form">
                         <form id="secondForm" class="form" action="#">
                             <label class="form-label">
-                                <input class="form-input form-input--mask" placeholder="+38(__)__-__-___" type="tel" name="tel" id="tel2">
+                                <input class="form-input form-input--mask" placeholder="+38(___) __-__-___" type="tel" name="tel" id="tel2">
                             </label>
                             <button type="submit" class="main-button">
                                 Узнать детали об акции
@@ -600,7 +601,7 @@
                         <input class="form-input" placeholder="Ваше имя" type="text" name="name" id="name3">
                     </label>
                     <label class="form-label mtb">
-                        <input class="form-input form-input--mask" placeholder="+38(__)__-__-___" type="tel" name="tel" id="tel3">
+                        <input class="form-input form-input--mask" placeholder="+38(___) __-__-___" type="tel" name="tel" id="tel3">
                     </label>
                     <button type="submit" class="main-button">
                         заказать консультацию
@@ -729,7 +730,7 @@
                             <input class="pop-up__input " placeholder="Ваше имя" type="text" name="name" id="popUpName1">
                         </label>
                         <label class="pop-up__label">
-                            <input class="pop-up__input form-input--mask" placeholder="+38(__)__-__-___"  type="tel" name="Телефон" id="popUpTel1" required>
+                            <input class="pop-up__input form-input--mask" placeholder="+38(___) __-__-___"  type="tel" name="Телефон" id="popUpTel1" required>
                         </label>
                     </div>
                     <button type="submit" class="main-button submit-telegram">
@@ -771,7 +772,7 @@
                     </p>
                     <div class="pop-up__form-block">
                         <label class="pop-up__label">
-                            <input class="pop-up__input form-input--mask" placeholder="+38(__)__-__-___" type="tel" name="Телефон" id="popUpTel2" required>
+                            <input class="pop-up__input form-input--mask" placeholder="+38(___) __-__-___" type="tel" name="Телефон" id="popUpTel2" required>
                         </label>
                     </div>
                     <button type="submit" class="main-button submit-telegram">
